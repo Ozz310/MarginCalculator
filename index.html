@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multi-Asset Margin Calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
         body {
-            font-family: 'Roboto', sans-serif; /* Changed to Roboto for consistency */
-            background-color: #000000; /* Solid black background for clarity with pattern */
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a; /* Adjusted to match Notion dark theme / News Widget background */
             color: #e0e0e0; /* Light text color */
             display: flex;
             flex-direction: column;
@@ -197,13 +198,12 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-            /* NEW: Add a subtle light gold border and glow to the logo itself */
             border: 1px solid rgba(240, 215, 136, 0.5);
             box-shadow: 0 0 10px rgba(240, 215, 136, 0.4), 0 2px 8px rgba(0,0,0,0.3);
-            transition: box-shadow 0.3s ease; /* Smooth transition for hover */
+            transition: box-shadow 0.3s ease;
         }
         .branding img:hover {
-            box-shadow: 0 0 15px rgba(240, 215, 136, 0.7), 0 2px 10px rgba(0,0,0,0.4); /* Enhanced glow on hover */
+            box-shadow: 0 0 15px rgba(240, 215, 136, 0.7), 0 2px 10px rgba(0,0,0,0.4);
         }
 
 
@@ -252,7 +252,9 @@
 </head>
 <body>
     <div class="calculator-container">
-        <h1 class="text-3xl font-bold text-center mb-6" style="color: #F0D788;">Multi-Asset Margin Calculator</h1> <div class="message-box" id="messageBox">
+        <h1 class="text-3xl font-bold text-center mb-6" style="color: #F0D788;">Multi-Asset Margin Calculator</h1>
+
+        <div class="message-box" id="messageBox">
             <span id="messageText"></span>
             <button class="message-box-close" onclick="hideMessage()">&times;</button>
         </div>
